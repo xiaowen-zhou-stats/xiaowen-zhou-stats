@@ -5,6 +5,19 @@ import Publications from './components/Publications/Publications';
 import Contact from './components/Contact/Contact';
 
 function App() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const navHeight = 80; // Height of the fixed navbar
+      const elementPosition = element.offsetTop - navHeight;
+      
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <div className="App">
       {/* Navigation */}
@@ -16,10 +29,30 @@ function App() {
               <p className="text-sm text-red-600 font-medium">Professor of Mathematics and Statistics</p>
             </div>
             <div className="hidden md:flex space-x-10">
-              <a href="#about" className="text-gray-700 hover:text-red-600 transition-colors font-medium text-lg">About</a>
-              <a href="#teaching" className="text-gray-700 hover:text-red-600 transition-colors font-medium text-lg">Teaching</a>
-              <a href="#publications" className="text-gray-700 hover:text-red-600 transition-colors font-medium text-lg">Publications</a>
-              <a href="#contact" className="text-gray-700 hover:text-red-600 transition-colors font-medium text-lg">Contact</a>
+              <button 
+                onClick={() => scrollToSection('about')} 
+                className="text-gray-700 hover:text-red-600 transition-colors font-medium text-lg cursor-pointer"
+              >
+                About
+              </button>
+              <button 
+                onClick={() => scrollToSection('teaching')} 
+                className="text-gray-700 hover:text-red-600 transition-colors font-medium text-lg cursor-pointer"
+              >
+                Teaching
+              </button>
+              <button 
+                onClick={() => scrollToSection('publications')} 
+                className="text-gray-700 hover:text-red-600 transition-colors font-medium text-lg cursor-pointer"
+              >
+                Publications
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')} 
+                className="text-gray-700 hover:text-red-600 transition-colors font-medium text-lg cursor-pointer"
+              >
+                Contact
+              </button>
             </div>
           </div>
         </div>
