@@ -1,4 +1,5 @@
 import React from 'react';
+import { Mail, ExternalLink } from 'lucide-react';
 
 const About = () => {
   return (
@@ -7,8 +8,8 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-20 items-center"> {/* Increased gap */}
           
           {/* Profile Image */}
-          <div className="flex justify-center lg:justify-start">
-            <div className="relative">
+          <div className="flex flex-col items-center">
+            <div className="relative mb-6">
               <div className="w-96 h-96 flex items-center justify-center">
                 <img 
                   src="/xiaowen.png" 
@@ -16,6 +17,27 @@ const About = () => {
                   className="w-[360px] h-[360px] rounded-full object-cover"
                 />
               </div>
+            </div>
+            
+            {/* Contact Icons */}
+            <div className="flex gap-6">
+              <a 
+                href="mailto:xiaowen.zhou@concordia.ca"
+                className="flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg border border-gray-200 hover:bg-red-50 hover:border-red-200 transition-all duration-300 group"
+                title="Email: xiaowen.zhou@concordia.ca"
+              >
+                <Mail className="w-7 h-7 text-gray-600 group-hover:text-red-600 transition-colors duration-300" />
+              </a>
+              
+              <a 
+                href="https://www.researchgate.net/profile/Xiaowen-Zhou-4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg border border-gray-200 hover:bg-red-50 hover:border-red-200 transition-all duration-300 group"
+                title="ResearchGate Profile"
+              >
+                <ExternalLink className="w-7 h-7 text-gray-600 group-hover:text-red-600 transition-colors duration-300" />
+              </a>
             </div>
           </div>
 

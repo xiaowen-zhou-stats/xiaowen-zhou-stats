@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import About from './components/About/About';
 import Teaching from './components/Teaching/Teaching';
 import Publications from './components/Publications/Publications';
