@@ -13,8 +13,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-8 py-5">
           <div className="flex justify-between items-center">
             <div className="flex flex-col">
-              <h1 className="text-2xl font-bold text-gray-900">Dr. Jane Smith</h1>
-              <p className="text-sm text-red-600 font-medium">Professor of Computer Science</p>
+              <h1 className="text-2xl font-bold text-gray-900">Dr. Xiaowen Zhou</h1>
+              <p className="text-sm text-red-600 font-medium">Professor of Mathematics and Statistics</p>
             </div>
             <div className="hidden md:flex space-x-10">
               <a href="#about" className="text-gray-700 hover:text-red-600 transition-colors font-medium text-lg">About</a>
