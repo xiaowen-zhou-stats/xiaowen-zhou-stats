@@ -31,11 +31,11 @@ const Teaching = () => {
         <div>
           <div className="grid lg:grid-cols-2 gap-8">
             {courses.map((course, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <div key={index} className="bg-white border border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
                 <div className="flex justify-between items-start mb-6">
                   <div>
                     <h4 className="text-2xl font-bold text-gray-900">{course.code}</h4>
-                    <h5 className="text-xl font-semibold text-red-600 mb-3">{course.title}</h5>
+                    <h5 className="text-xl font-semibold text-red-600 mb-3 text-left">{course.title}</h5>
                   </div>
                   <span className={`px-4 py-2 rounded-full text-sm font-semibold ${
                     course.level === 'Graduate' 
@@ -46,9 +46,9 @@ const Teaching = () => {
                   </span>
                 </div>
                 
-                <p className="text-gray-600 mb-6 leading-relaxed text-lg">{course.description}</p>
+                <p className="text-gray-600 leading-relaxed text-lg flex-grow text-left">{course.description}</p>
                 
-                <div className="flex justify-between items-center">
+                <div className="mt-6">
                   <span className="text-gray-500 font-medium">📅 {course.semester}</span>
                 </div>
               </div>

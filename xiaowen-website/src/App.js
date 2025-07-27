@@ -38,7 +38,7 @@ function App() {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-8 text-center">
           <p className="text-gray-300 text-lg">
-            © 2025 Dr. Jane Smith. All rights reserved.
+            © 2025 Dr. Xiaowen Zhou. All rights reserved.
           </p>
         </div>
       </footer>
