@@ -78,27 +78,26 @@ const Publications = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-slate-800 mb-4">Publications</h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            My research contributes to the advancement of artificial intelligence, with a focus on 
-            ethical AI, healthcare applications, and machine learning methodologies.
+            My research contributes to the advancement of statistics, with a focus on Stochastic processes and applications.
           </p>
         </div>
 
         {/* Research Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           <div className="bg-white rounded-lg p-6 text-center shadow-sm border border-slate-200">
-            <div className="text-3xl font-bold text-red-600 mb-2">80+</div>
+            <div className="text-3xl font-bold text-red-600 mb-2">130+</div>
             <div className="text-slate-600 font-medium">Total Publications</div>
           </div>
           <div className="bg-white rounded-lg p-6 text-center shadow-sm border border-slate-200">
-            <div className="text-3xl font-bold text-red-600 mb-2">2,450</div>
+            <div className="text-3xl font-bold text-red-600 mb-2">1,817</div>
             <div className="text-slate-600 font-medium">Citations</div>
           </div>
           <div className="bg-white rounded-lg p-6 text-center shadow-sm border border-slate-200">
-            <div className="text-3xl font-bold text-red-600 mb-2">28</div>
-            <div className="text-slate-600 font-medium">H-Index</div>
+            <div className="text-3xl font-bold text-red-600 mb-2">11,208</div>
+            <div className="text-slate-600 font-medium">Reads</div>
           </div>
           <div className="bg-white rounded-lg p-6 text-center shadow-sm border border-slate-200">
-            <div className="text-3xl font-bold text-red-600 mb-2">15</div>
+            <div className="text-3xl font-bold text-red-600 mb-2">50</div>
             <div className="text-slate-600 font-medium">Collaborators</div>
           </div>
         </div>
@@ -175,9 +174,8 @@ const Publications = () => {
         <div className="mt-16 bg-white rounded-xl p-8 shadow-sm border border-slate-200">
           <h3 className="text-2xl font-bold text-slate-800 mb-6 text-center">Research Interests</h3>
           <div className="flex flex-wrap justify-center gap-3">
-            {['Artificial Intelligence', 'Machine Learning', 'Ethical AI', 'Healthcare AI', 
-              'Deep Learning', 'Computer Vision', 'Natural Language Processing', 'Data Privacy',
-              'Federated Learning', 'Interpretable AI'].map((interest, index) => (
+            {['Stochastic Modeling', 'Risk Modeling', 'Stochastic Processes', 'Probability Theory', 
+              'Option Pricing', 'Probability Theory'].map((interest, index) => (
               <span key={index} className="px-4 py-2 bg-red-100 text-red-700 rounded-full text-sm font-medium">
                 {interest}
               </span>
