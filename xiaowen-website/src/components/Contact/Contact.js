@@ -1,28 +1,6 @@
 import React, { useState } from 'react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I will get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
-  };
-
   return (
     <section id="contact" className="min-h-screen bg-white flex items-center">
       <div className="max-w-7xl mx-auto px-8 py-20">
@@ -51,9 +29,9 @@ const Contact = () => {
                     <h4 className="text-xl font-bold text-gray-900">Office</h4>
                   </div>
                   <p className="text-gray-700 text-lg leading-relaxed">
-                    Room 304, Computer Science Building<br />
-                    University of Technology<br />
-                    123 University Ave, Tech City, TC 12345
+                    1400 de Maisonneuve Blvd. West<br />
+                    Concordia University<br />
+                    Montreal, QC, Canada
                   </p>
                 </div>
 
@@ -63,19 +41,9 @@ const Contact = () => {
                     <h4 className="text-xl font-bold text-gray-900">Email</h4>
                   </div>
                   <p className="text-gray-700 text-lg">
-                    <a href="mailto:j.smith@university.edu" className="text-gray-600 hover:underline font-semibold">
-                      j.smith@university.edu
+                    <a href="mailto:xiaowen.zhou@concordia.ca" className="text-gray-600 hover:underline font-semibold">
+                      xiaowen.zhou@concordia.ca
                     </a>
-                  </p>
-                </div>
-
-                <div className="bg-gray-50 rounded-xl p-8 border border-gray-100 shadow-lg">
-                  <div className="flex items-center mb-4">
-                    <span className="text-3xl mr-5 text-red-600">📞</span>
-                    <h4 className="text-xl font-bold text-gray-900">Phone</h4>
-                  </div>
-                  <p className="text-gray-700 text-lg font-semibold">
-                    +1 (555) 123-4567
                   </p>
                 </div>
 
@@ -85,116 +53,34 @@ const Contact = () => {
                     <h4 className="text-xl font-bold text-gray-900">Office Hours</h4>
                   </div>
                   <p className="text-gray-700 text-lg leading-relaxed">
-                    Tuesday & Thursday: 2:00 PM - 4:00 PM<br />
-                    Or by appointment
+                    By appointment
                   </p>
                 </div>
               </div>
             </div>
-
-            {/* Social Links */}
-            <div>
-              <h4 className="text-xl font-bold text-gray-900 mb-6">Connect Online</h4>
-              <div className="flex space-x-4">
-                <a href="#" className="bg-red-600 text-white p-4 rounded-xl hover:bg-red-700 transition-colors shadow-lg">
-                  <span className="text-2xl">🔗</span>
-                </a>
-                <a href="#" className="bg-gray-800 text-white p-4 rounded-xl hover:bg-gray-900 transition-colors shadow-lg">
-                  <span className="text-2xl">🐙</span>
-                </a>
-                <a href="#" className="bg-blue-500 text-white p-4 rounded-xl hover:bg-blue-600 transition-colors shadow-lg">
-                  <span className="text-2xl">🐦</span>
-                </a>
-                <a href="#" className="bg-red-600 text-white p-4 rounded-xl hover:bg-red-700 transition-colors shadow-lg">
-                  <span className="text-2xl">🎓</span>
-                </a>
-              </div>
-            </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="bg-gray-50 rounded-xl p-10 border border-gray-200 shadow-lg">
-            <h3 className="text-3xl font-bold text-gray-900 mb-8">Send a Message</h3>
+          {/* Google Maps */}
+          <div className="bg-gray-50 rounded-xl p-6 border border-gray-200 shadow-lg">
+            <h3 className="text-3xl font-bold text-gray-900 mb-8">Location</h3>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-lg font-semibold text-gray-700 mb-3">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full px-5 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors text-lg"
-                    placeholder="Your full name"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-lg font-semibold text-gray-700 mb-3">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full px-5 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors text-lg"
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-              </div>
+            <div className="w-full h-96 rounded-lg overflow-hidden border border-gray-300">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.0894444444444!2d-73.57854968437504!3d45.49719997910155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a5aa4b0a437%3A0x7177161b71121a0a!2s1400%20Bd%20de%20Maisonneuve%20O%2C%20Montr%C3%A9al%2C%20QC%20H3G%201M8%2C%20Canada!5e0!3m2!1sen!2sus!4v1643234567890!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Concordia University Location"
+              ></iframe>
+            </div>
 
-              <div>
-                <label htmlFor="subject" className="block text-lg font-semibold text-gray-700 mb-3">
-                  Subject *
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-5 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors text-lg"
-                  placeholder="What is this regarding?"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-lg font-semibold text-gray-700 mb-3">
-                  Message *
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  required
-                  rows={6}
-                  className="w-full px-5 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors resize-vertical text-lg"
-                  placeholder="Please describe your inquiry or message..."
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-red-600 text-white py-4 px-8 rounded-lg font-bold hover:bg-red-700 transition-colors focus:ring-2 focus:ring-red-500 focus:ring-offset-2 text-lg"
-              >
-                Send Message
-              </button>
-            </form>
-
-            <div className="mt-8 p-6 bg-red-50 rounded-lg border border-red-200">
-              <p className="text-red-800 text-lg">
-                <span className="font-bold">💡 Tip:</span> For research collaboration inquiries, 
-                please include details about your research interests and proposed timeline.
+            <div className="mt-6 p-6 bg-blue-50 rounded-lg border border-blue-200">
+              <p className="text-blue-800 text-lg">
+                <span className="font-bold">🚇 Transit:</span> Guy-Concordia Metro Station (Green Line) - 
+                2 minute walk from the university campus.
               </p>
             </div>
           </div>

@@ -93,7 +93,7 @@ const Publications = () => {
             <div className="text-slate-600 font-medium">Citations</div>
           </div>
           <div className="bg-white rounded-lg p-6 text-center shadow-sm border border-slate-200">
-            <div className="text-3xl font-bold text-red-600 mb-2">11,208</div>
+            <div className="text-3xl font-bold text-red-600 mb-2">11,000+</div>
             <div className="text-slate-600 font-medium">Reads</div>
           </div>
           <div className="bg-white rounded-lg p-6 text-center shadow-sm border border-slate-200">

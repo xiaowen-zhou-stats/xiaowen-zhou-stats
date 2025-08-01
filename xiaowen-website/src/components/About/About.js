@@ -69,7 +69,7 @@ const About = () => {
                 <div className="text-base text-gray-600 font-medium">Publications</div> {/* Increased text size */}
               </div>
               <div className="bg-white rounded-xl p-8 text-center shadow-lg border border-gray-200"> {/* Increased padding */}
-                <div className="text-4xl font-bold text-red-600 mb-2">20+</div> {/* Increased text size */}
+                <div className="text-4xl font-bold text-red-600 mb-2">4</div> {/* Increased text size */}
                 <div className="text-base text-gray-600 font-medium">PhD Students</div> {/* Increased text size */}
               </div>
               <div className="bg-white rounded-xl p-8 text-center shadow-lg border border-gray-200"> {/* Increased padding */}
