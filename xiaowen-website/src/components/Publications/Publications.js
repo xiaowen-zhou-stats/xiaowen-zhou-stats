@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const Publications = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [currentPage, setCurrentPage] = useState(1);
+  const [showCitation, setShowCitation] = useState(null);
   const publicationsPerPage = 5;
 
   const publications = [
@@ -704,7 +705,7 @@ const Publications = () => {
     }
   ];
 
-  const categories = [
+    const categories = [
     { id: 'all', label: 'All Publications', count: publications.length },
     { id: 'article', label: 'Articles', count: publications.filter(p => p.category === 'article').length },
     { id: 'chapter', label: 'Chapters', count: publications.filter(p => p.category === 'chapter').length },
@@ -729,6 +730,52 @@ const Publications = () => {
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
+  };
+
+  const handleReadPaper = (publication) => {
+    if (publication.url) {
+      window.open(publication.url, '_blank', 'noopener,noreferrer');
+    } else {
+      alert(`Paper "${publication.title}" is not available online yet.`);
+    }
+  };
+
+  const handleCite = (publication) => {
+    setShowCitation(showCitation === publication.id ? null : publication.id);
+  };
+
+  const generateCitation = (pub, style = 'apa') => {
+    const year = pub.year;
+    const authors = pub.authors;
+    const title = pub.title;
+    const journal = pub.journal;
+    
+    switch (style) {
+      case 'apa':
+        return `${authors} (${year}). ${title}. ${journal}.`;
+      case 'mla':
+        return `${authors}. "${title}." ${journal}, ${year}.`;
+      case 'chicago':
+        return `${authors}. "${title}." ${journal} (${year}).`;
+      case 'bibtex':
+        const key = `${authors.split(',')[0].split(' ').pop().toLowerCase()}${year}`;
+        return `@article{${key},
+  title={${title}},
+  author={${authors}},
+  journal={${journal}},
+  year={${year}}
+}`;
+      default:
+        return `${authors} (${year}). ${title}. ${journal}.`;
+    }
+  };
+
+  const copyCitation = (citation) => {
+    navigator.clipboard.writeText(citation).then(() => {
+      alert('Citation copied to clipboard!');
+    }).catch(() => {
+      alert('Failed to copy citation. Please select and copy manually.');
+    });
   };
 
   const getCategoryColor = (category) => {
@@ -840,12 +887,18 @@ const Publications = () => {
                 {pub.abstract}
               </p>
               
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center mb-4">
                 <div className="flex gap-3">
-                  <button className="text-red-600 hover:text-red-800 font-medium text-sm hover:underline">
+                  <button 
+                    onClick={() => handleReadPaper(pub)}
+                    className="text-red-600 hover:text-red-800 font-medium text-sm hover:underline transition-colors"
+                  >
                     📄 Read Paper
                   </button>
-                  <button className="text-slate-500 hover:text-slate-700 font-medium text-sm hover:underline">
+                  <button 
+                    onClick={() => handleCite(pub)}
+                    className="text-slate-500 hover:text-slate-700 font-medium text-sm hover:underline transition-colors"
+                  >
                     📝 Cite
                   </button>
                 </div>
@@ -853,6 +906,42 @@ const Publications = () => {
                   Published {pub.year}
                 </div>
               </div>
+
+              {/* Citation Panel */}
+              {showCitation === pub.id && (
+                <div className="mt-4 p-4 bg-gray-50 rounded-lg border-t border-gray-200">
+                  <h4 className="font-semibold text-slate-800 mb-3">Citation Formats</h4>
+                  
+                  {/* Citation Style Tabs */}
+                  <div className="space-y-3">
+                    {['apa', 'mla', 'chicago', 'bibtex'].map(style => (
+                      <div key={style} className="bg-white rounded-lg p-3 border">
+                        <div className="flex justify-between items-start mb-2">
+                          <span className="font-medium text-slate-700 uppercase text-xs">
+                            {style === 'bibtex' ? 'BibTeX' : style.toUpperCase()}
+                          </span>
+                          <button
+                            onClick={() => copyCitation(generateCitation(pub, style))}
+                            className="text-xs text-red-600 hover:text-red-800 font-medium hover:underline"
+                          >
+                            Copy
+                          </button>
+                        </div>
+                        <div className="text-sm text-slate-600 font-mono bg-gray-50 p-2 rounded border whitespace-pre-wrap">
+                          {generateCitation(pub, style)}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  <button
+                    onClick={() => setShowCitation(null)}
+                    className="mt-3 text-sm text-slate-500 hover:text-slate-700"
+                  >
+                    Close Citations
+                  </button>
+                </div>
+              )}
             </div>
           ))}
         </div>
