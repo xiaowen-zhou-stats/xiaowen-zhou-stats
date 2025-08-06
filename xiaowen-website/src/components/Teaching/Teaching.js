@@ -24,7 +24,7 @@ const Teaching = () => {
       code: "STAT249",
       title: "Probability 1",
       level: "Undergraduate",
-      description: "This course covers the fundamentals of probability theory, including random variables, discrete and continuous distributions, expectation, and more.",
+      description: "This course is an introduction to rigorous basis of probability theory. Students learn about the axiomatic approach to probability; combinatorial probability; random sampling and sampling distributions; discrete and continuous distributions; expectation; variances; joint variables and their distributions, conditional distributions, conditional expectation",
     },
     {
       code: "MAST 679V",
