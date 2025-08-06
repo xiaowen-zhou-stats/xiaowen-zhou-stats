@@ -13,7 +13,8 @@ const Publications = () => {
       journal: "Cornell University",
       year: "2025",
       category: "preprint",
-      abstract: "The Λ-Fleming-Viot process is a probability measure-valued process that is dual to a Λ-coalescent that allows multiple collisions. In this paper, we consider a class of Λ-Fleming-Viot processes with Brownian spatial motion and with associated Λ-coalescents that come down from infinity. Notably, these processes have the compact support property: the support of the process becomes finite as soon as, even though the initial measure has unbounded support. We obtain asymptotic results characterizing the rates at which the initial supports become finite."
+      abstract: "The Λ-Fleming-Viot process is a probability measure-valued process that is dual to a Λ-coalescent that allows multiple collisions. In this paper, we consider a class of Λ-Fleming-Viot processes with Brownian spatial motion and with associated Λ-coalescents that come down from infinity. Notably, these processes have the compact support property: the support of the process becomes finite as soon as, even though the initial measure has unbounded support. We obtain asymptotic results characterizing the rates at which the initial supports become finite.",
+      url: "https://arxiv.org/pdf/2506.07067",
     },
     {
       title: "De Finetti's problem with fixed transaction costs and regime switching",
@@ -21,7 +22,8 @@ const Publications = () => {
       journal: "Cornell University",
       year: "2025",
       category: "preprint",
-      abstract: "In this paper, we examine a modified version of de Finetti's optimal dividend problem, incorporating fixed transaction costs and altering the surplus process by introducing two-valued drift and two-valued volatility coefficients. This modification aims to capture the transitions or adjustments in the company's financial status."
+      abstract: "In this paper, we examine a modified version of de Finetti's optimal dividend problem, incorporating fixed transaction costs and altering the surplus process by introducing two-valued drift and two-valued volatility coefficients. This modification aims to capture the transitions or adjustments in the company's financial status.",
+      url: "https://arxiv.org/pdf/2502.05839"
     },
     {
       title: "Exponential ergodicity of branching processes with immigration and competition",
@@ -29,7 +31,8 @@ const Publications = () => {
       journal: "Project Euclid",
       year: "2025",
       category: "article",
-      abstract: "We study the ergodic property of a continuous-state branching process with immigration and competition, which is an extension of the models studied by Lambert (2005), Pardoux (2016) and Berestycki et al. (2018) with an additional immigration structure."
+      abstract: "We study the ergodic property of a continuous-state branching process with immigration and competition, which is an extension of the models studied by Lambert (2005), Pardoux (2016) and Berestycki et al. (2018) with an additional immigration structure.",
+      url: "https://projecteuclid.org/journals/annales-de-linstitut-henri-poincare-probabilites-et-statistiques/volume-61/issue-1/Exponential-ergodicity-of-branching-processes-with-immigration-and-competition/10.1214/23-AIHP1425.short"
     },
     {
       title: "Extinction behaviour for a mutually interacting continuous-state population dynamics",
@@ -37,7 +40,8 @@ const Publications = () => {
       journal: "Cornell University",
       year: "2024",
       category: "preprint",
-      abstract: "We consider a system of two stochastic differential equations (SDEs) with negative two-way interactions driven by Brownian motions and spectrally positive α-stable random measures. Such a SDE system can be identified as a Lotka-Volterra type population model."
+      abstract: "We consider a system of two stochastic differential equations (SDEs) with negative two-way interactions driven by Brownian motions and spectrally positive α-stable random measures. Such a SDE system can be identified as a Lotka-Volterra type population model.",
+      url: "https://arxiv.org/pdf/2412.00376"
     },
     {
       title: "Quasi-stationary distribution for continuous-state branching processes with competition",
@@ -45,7 +49,8 @@ const Publications = () => {
       journal: "Science Direct",
       year: "2024",
       category: "article",
-      abstract: "We study quasi-stationary distribution of the continuous-state branching process with competition introduced in Berestycki, Fittipaldi and Fontbona (Probab. Theory Relat. Fields, 2018). This process is constructed as the unique strong solution to a stochastic integral equation with jumps."
+      abstract: "We study quasi-stationary distribution of the continuous-state branching process with competition introduced in Berestycki, Fittipaldi and Fontbona (Probab. Theory Relat. Fields, 2018). This process is constructed as the unique strong solution to a stochastic integral equation with jumps.",
+      url: "https://www.sciencedirect.com/science/article/pii/S0304414924001637?via%3Dihub"
     },
     {
       title: "A note on Skew Brownian Motion with two-valued drift and an application",
@@ -53,7 +58,8 @@ const Publications = () => {
       journal: "Cornell University",
       year: "2024",
       category: "preprint",
-      abstract: "For refracted skew Brownian motion (skew Brownian motion with two-valued drift), adopting a perturbation approach we find expressions of its potential densities. As applications, we recover its transition density and study its long-time asymptotic behaviors."
+      abstract: "For refracted skew Brownian motion (skew Brownian motion with two-valued drift), adopting a perturbation approach we find expressions of its potential densities. As applications, we recover its transition density and study its long-time asymptotic behaviors.",
+      url: "https://arxiv.org/pdf/2407.09321"
     },
     {
       title: "Entrance Laws for Continuous-State Nonlinear Branching Processes Coming Down from Infinity",
@@ -61,7 +67,8 @@ const Publications = () => {
       journal: "Springer Nature",
       year: "2024",
       category: "chapter",
-      abstract: "We consider a class of non-negative valued, time-changed spectrally positive Lévy processes stopped whenever hitting 0, which can be identified as continuous-state branching processes with population dependent branching rates."
+      abstract: "We consider a class of non-negative valued, time-changed spectrally positive Lévy processes stopped whenever hitting 0, which can be identified as continuous-state branching processes with population dependent branching rates.",
+      url: "https://link.springer.com/chapter/10.1007/978-3-031-47417-0_25"
     },
     {
       title: "An excursion theoretic approach to Parisian ruin problem",
@@ -69,7 +76,8 @@ const Publications = () => {
       journal: "Science Direct",
       year: "2024",
       category: "article",
-      abstract: "Applying excursion theory, we re-express several well studied fluctuation quantities associated to Parisian ruin problem for Lévy risk processes in terms of integrals with respect to excursion measure for spectrally negative Lévy process."
+      abstract: "Applying excursion theory, we re-express several well studied fluctuation quantities associated to Parisian ruin problem for Lévy risk processes in terms of integrals with respect to excursion measure for spectrally negative Lévy process.",
+      url: "https://www.sciencedirect.com/science/article/pii/S016766872400057X?via%3Dihub"
     },
     {
       title: "Behaviors near explosion of nonlinear CSBPs with regularly varying mechanisms",
@@ -77,7 +85,8 @@ const Publications = () => {
       journal: "Cornell University",
       year: "2024",
       category: "preprint",
-      abstract: "We study the explosion phenomenon of nonlinear continuous-state branching processes (nonlinear CSBPs). First an explicit integral test for explosion is designed when the rate function does not increase too fast."
+      abstract: "We study the explosion phenomenon of nonlinear continuous-state branching processes (nonlinear CSBPs). First an explicit integral test for explosion is designed when the rate function does not increase too fast.",
+      url: "https://arxiv.org/pdf/2404.06145"
     },
     {
       title: "Exact Modulus of Continuities for Λ-Fleming–Viot Processes with Brownian Spatial Motion",
@@ -85,7 +94,8 @@ const Publications = () => {
       journal: "Journal of Theoretical Probability",
       year: "2024",
       category: "article",
-      abstract: "For a class of Λ-Fleming–Viot processes with Brownian spatial motion in R^d whose associated Λ-coalescents come down from infinity, we obtain sharp global and local modulus of continuities for the ancestry processes recovered from the lookdown constructions."
+      abstract: "For a class of Λ-Fleming–Viot processes with Brownian spatial motion in R^d whose associated Λ-coalescents come down from infinity, we obtain sharp global and local modulus of continuities for the ancestry processes recovered from the lookdown constructions.",
+      url: "https://link.springer.com/article/10.1007/s10959-024-01326-4"
     },
     {
       title: "Existence of weak solutions to stochastic heat equations driven by truncated α-stable white noises with non-Lipschitz coefficients",
@@ -93,7 +103,8 @@ const Publications = () => {
       journal: "Stochastic Processes and their Applications",
       year: "2024",
       category: "article",
-      abstract: "We consider a class of stochastic heat equations driven by truncated α-stable white noises for α ∈ (1,2) with noise coefficients that are continuous but not necessarily Lipschitz and satisfy globally linear growth conditions."
+      abstract: "We consider a class of stochastic heat equations driven by truncated α-stable white noises for α ∈ (1,2) with noise coefficients that are continuous but not necessarily Lipschitz and satisfy globally linear growth conditions.",
+      url: "https://www.sciencedirect.com/science/article/abs/pii/S0022247X24002841?via%3Dihub"
     },
     {
       title: "Comparison principle for stochastic heat equations driven by α-stable white noises",
@@ -101,7 +112,8 @@ const Publications = () => {
       journal: "Electronic Journal of Probability",
       year: "2024",
       category: "article",
-      abstract: "For a class of non-linear stochastic heat equations driven by α-stable white noises for α ∈ (1,2) with Lipschitz coefficients, we prove the existence and pathwise uniqueness of L^p-valued càdlàg solution to such an equation for p ∈ (α, 2]."
+      abstract: "For a class of non-linear stochastic heat equations driven by α-stable white noises for α ∈ (1,2) with Lipschitz coefficients, we prove the existence and pathwise uniqueness of L^p-valued càdlàg solution to such an equation for p ∈ (α, 2].",
+      url: "https://projecteuclid.org/journals/bernoulli/volume-30/issue-2/Comparison-principle-for-stochastic-heat-equations-driven-by-%ce%b1-stable/10.3150/23-BEJ1635.short"
     },
     {
       title: "On Optimality of Barrier Dividend Control Under Endogenous Regime Switching with Application to Chapter 11 Bankruptcy",
@@ -109,7 +121,17 @@ const Publications = () => {
       journal: "SIAM Journal on Control and Optimization",
       year: "2023",
       category: "article",
-      abstract: "Motivated by recent developments in risk management based on the U.S. bankruptcy code, we revisit the De Finetti's optimal dividend problem by incorporating the reorganization process and regulator's intervention documented in Chapter 11 bankruptcy."
+      abstract: "Motivated by recent developments in risk management based on the U.S. bankruptcy code, we revisit the De Finetti's optimal dividend problem by incorporating the reorganization process and regulator's intervention documented in Chapter 11 bankruptcy.",
+      url: "https://link.springer.com/article/10.1007/s00245-023-10079-1"
+    },
+    {
+      title: "Quasi-stationary distribution for continuous-state branching processes with competition",
+      authors: "Pei-Sen Li, Jian Wang, Xiaowen Zhou",
+      journal: "Cornell University",
+      year: "2023",
+      category: "preprint",
+      abstract: "We study the quasi-stationary distribution for continuous-state branching processes with competition. We establish the existence and uniqueness of the quasi-stationary distribution and investigate its properties.",
+      url: "https://arxiv.org/pdf/2308.12493"
     },
     {
       title: "On the boundary classification of Λ-Wright–Fisher processes with frequency-dependent selection",
@@ -117,7 +139,8 @@ const Publications = () => {
       journal: "Annals of Applied Probability",
       year: "2023",
       category: "article",
-      abstract: "We construct extensions of the pure-jump Λ-Wright-Fisher processes with frequency-dependent selection (Λ-WF processes with selection) beyond their first passage time at the boundary 1."
+      abstract: "We construct extensions of the pure-jump Λ-Wright-Fisher processes with frequency-dependent selection (Λ-WF processes with selection) beyond their first passage time at the boundary 1.",
+      url: "https://ahl.centre-mersenne.org/articles/10.5802/ahl.170/"
     },
     {
       title: "Explosion of continuous-state branching processes with competition in a Lévy environment",
@@ -128,12 +151,12 @@ const Publications = () => {
       abstract: "We find sufficient conditions on explosion/non-explosion for continuous-state branching processes with competition in a Lévy random environment. In particular, we identify the necessary and sufficient conditions on explosion/non-explosion when the competition function is a power function."
     },
     {
-    title: "An Excursion Theoretic Approach to Parisian Ruin Problem",
-    authors: "Li Bo, Xiaowen Zhou",
-    journal: "Cornell University",
-    year: "2023",
-    category: "preprint", 
-    abstract: "Applying excursion theory, we re-express several well studied fluctuation quantities associated to Parisian ruin problem for Lévy risk processes in terms of integrals with respect to excursion measure for spectrally negative Lévy process. We show that these new expressions reconcile with the previous results on Parisian ruin problem."
+      title: "An Excursion Theoretic Approach to Parisian Ruin Problem",
+      authors: "Li Bo, Xiaowen Zhou",
+      journal: "Cornell University",
+      year: "2023",
+      category: "preprint", 
+      abstract: "Applying excursion theory, we re-express several well studied fluctuation quantities associated to Parisian ruin problem for Lévy risk processes in terms of integrals with respect to excursion measure for spectrally negative Lévy process. We show that these new expressions reconcile with the previous results on Parisian ruin problem."
     },
     {
         title: "Parisian excursion with capital injection for drawdown reflected Lévy insurance risk process",
@@ -891,7 +914,12 @@ const Publications = () => {
                 <div className="flex gap-3">
                   <button 
                     onClick={() => handleReadPaper(pub)}
-                    className="text-red-600 hover:text-red-800 font-medium text-sm hover:underline transition-colors"
+                    disabled={!pub.url}
+                    className={`font-medium text-sm transition-colors ${
+                      pub.url 
+                        ? 'text-red-600 hover:text-red-800 hover:underline cursor-pointer' 
+                        : 'text-gray-400 cursor-not-allowed'
+                    }`}
                   >
                     📄 Read Paper
                   </button>
