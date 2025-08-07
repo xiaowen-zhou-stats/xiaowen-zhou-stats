@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.75ef1437.css",
+    "main.js": "/website/static/js/main.97537303.js",
+    "static/media/xiaowen.png": "/website/static/media/xiaowen.07f5216b17396abb7896.png",
+    "index.html": "/website/index.html",
+    "main.75ef1437.css.map": "/website/static/css/main.75ef1437.css.map",
+    "main.97537303.js.map": "/website/static/js/main.97537303.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75ef1437.css",
+    "static/js/main.97537303.js"
+  ]
+}
