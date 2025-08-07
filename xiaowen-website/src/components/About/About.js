@@ -1,5 +1,5 @@
-import React from 'react';
 import { Mail, ExternalLink } from 'lucide-react';
+import xiaowenImage from '../../xiaowen.png'
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
             <div className="relative mb-6">
               <div className="w-96 h-96 flex items-center justify-center">
                 <img 
-                  src="/xiaowen.png" 
+                  src={xiaowenImage}
                   alt="Xiaowen" 
                   className="w-[360px] h-[360px] rounded-full object-cover"
                 />
