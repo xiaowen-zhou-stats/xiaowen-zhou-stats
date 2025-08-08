@@ -58,7 +58,7 @@ const About = () => {
               
               <p>
                 My research focuses on Stochastic processes and applications, namely the Levy process. I have 
-                published over 130 peer-reviewed papers and has been recognized for his contributions to the field.
+                published over 130 peer-reviewed papers and have been recognized for my contributions to the field.
               </p>
             </div>
 
