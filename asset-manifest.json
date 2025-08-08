@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.75ef1437.css",
-    "main.js": "/static/js/main.648a11e8.js",
-    "static/media/xiaowen.png": "/static/media/xiaowen.07f5216b17396abb7896.png",
+    "main.js": "/static/js/main.a0074f14.js",
+    "static/media/xiaowen.png": "/static/media/xiaowen.bd72a2ab069623929151.png",
     "index.html": "/index.html",
     "main.75ef1437.css.map": "/static/css/main.75ef1437.css.map",
-    "main.648a11e8.js.map": "/static/js/main.648a11e8.js.map"
+    "main.a0074f14.js.map": "/static/js/main.a0074f14.js.map"
   },
   "entrypoints": [
     "static/css/main.75ef1437.css",
-    "static/js/main.648a11e8.js"
+    "static/js/main.a0074f14.js"
   ]
 }
