@@ -842,7 +842,7 @@ const Publications = () => {
         {/* Research Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           <div className="bg-white rounded-lg p-6 text-center shadow-sm border border-slate-200">
-            <div className="text-3xl font-bold text-red-600 mb-2">130+</div>
+            <div className="text-3xl font-bold text-red-600 mb-2">88</div>
             <div className="text-slate-600 font-medium">Total Publications</div>
           </div>
           <div className="bg-white rounded-lg p-6 text-center shadow-sm border border-slate-200">

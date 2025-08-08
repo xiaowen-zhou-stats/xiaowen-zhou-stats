@@ -65,7 +65,7 @@ const About = () => {
             {/* Key Achievements */}
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 mt-12 justify-center"> {/* Increased gap */}
               <div className="bg-white rounded-xl p-8 text-center shadow-lg border border-gray-200"> {/* Increased padding */}
-                <div className="text-4xl font-bold text-red-600 mb-2">130+</div> {/* Increased text size */}
+                <div className="text-4xl font-bold text-red-600 mb-2">88</div> {/* Increased text size */}
                 <div className="text-base text-gray-600 font-medium">Publications</div> {/* Increased text size */}
               </div>
               <div className="bg-white rounded-xl p-8 text-center shadow-lg border border-gray-200"> {/* Increased padding */}
